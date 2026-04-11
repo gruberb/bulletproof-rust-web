@@ -1,0 +1,24 @@
+[book]
+title = "Bulletproof Rust Web"
+authors = ["Bastian Gruber"]
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/gruberb/bulletproof-rust-web"
+edit-url-template = "https://github.com/gruberb/bulletproof-rust-web/edit/main/book/src/{path}"
+no-section-label = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+boost-title = 2
+boost-hierarchy = 1
+
+[output.html.code.hidelines]
+rust = "# "
